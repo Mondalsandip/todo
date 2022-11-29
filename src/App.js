@@ -32,6 +32,7 @@ function App() {
     let index = tasks.findIndex(t => t.id === id);
     tempList[index] = task;
     setTasks([...tempList]);
+    console.log(tempList)
   };
   const onDelete = (id) => {
     let tempList = tasks.filter(task => task.id !== id);
